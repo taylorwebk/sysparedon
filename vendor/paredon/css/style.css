@@ -139,3 +139,414 @@ body {
    
   }
   
+  
+/*INCLUDE FILE LESS*/
+/*
+
+Theme Name: THREELEAVES - Responsive Hotel Template
+Author: FAC
+Support: falvarezcol@gmail.com
+Created: 27/03/2018
+Description: Templeate for projects in university.
+Version: 0.1
+Tags: 
+ ===============================================================
+
+    TABLE OF CONTENT
+
+1 GENERAL STYLING
+    --------------------------------
+       1.1 GENERIC
+       1.2 BASIC - TYPOGRAFY STYLE
+       1.3 SPINNER
+       1.4 DATEPICKER
+       1.5 SLIDER
+       1.6 BUTTON
+       1.7 SECTION
+       1.8 NAVBAR
+       1.9 BREADCRUMBS
+       1.10 PAGINATION
+       1.11 FOOTER
+
+2 SPECIFIC STYLE
+    --------------------------------
+    2.1. images
+
+
+
+
+*/
+
+
+/*----------------------------------------------------------------------------------------*/
+/*                                                                                        */
+/*          1.1 GENERIC                                                                              */
+/*                                                                                        */
+/*----------------------------------------------------------------------------------------*/
+
+
+/*include font*/
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Roboto+Slab:400,300,700,100|Pacifico);
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", sans-serif;
+    /*font-family: cursive;*/
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
+/*                                                                                        */
+/*           1.2 BASIC - TYPOGRAFY STYLE*/
+/*                                                                                        */
+/*----------------------------------------------------------------------------------------*/
+
+
+a {
+  outline: 0 !important;
+  color: #333;
+}
+
+a:hover,
+a:focus,
+a:active{
+	text-decoration: none;
+	color:#06d0d8;
+} 
+
+h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+	font-weight: 100;
+}
+
+h1 small{
+	display:block;
+	color:#fff;
+}
+
+strong{
+	font-weight: 600;
+}
+
+.font-white{
+    color:#fff;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.line-separator {
+  height: 1px;
+  color: #DDD;
+  margin: 50px 0 20px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.6 BUTTON                                                                 */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+
+.btn{
+	position: relative;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.btn-default{
+	background-color:#06d0d8;
+	border-color: #05a0a6;
+	color: #333;
+}
+
+
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover {
+  background-color: #ffffff;
+  border-color: #CCC;
+  color: #333;
+}
+
+.btn-reverse {
+  background-color: #ffffff;
+  border-color: #CCC;
+  color: #333;
+}
+
+.btn-reverse:active,
+.btn-reverse:focus,
+.btn-reverse:hover {
+  background-color: #06d0d8;
+  border-color: #05a0a6;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    1.7 SECTION STYLE                                                          */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+section{
+	position: relative;
+	padding: 0px 0 10px 0 ;	
+}
+
+section .section-title,
+section .section-sub-title {
+  text-align: center;
+}
+section .section-title {
+  font-size: 40px;
+  font-family: "Amatic SC", sans-serif;
+  display: block;
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(153, 153, 153, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=@val2, OffY=@val3, Color=@color)";
+}
+section .section-sub-title {
+  display: block;
+  font-size: 20px;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(204, 204, 204, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=@val2, OffY=@val3, Color=@color)";
+  padding-bottom: 30px;
+}
+
+
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    2.1 images                                                         */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+
+.image{
+    width: 200px;
+    max-width: 100%;
+   
+}
+
+.image_profile{
+    padding: 20px;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border:#fff solid 5px;
+}
+
+
+.center{
+    text-align: center
+}
+
+
+/*-------------------------------------------------------------------------------*/
+/*                                                                               */
+/*    3 style for id                                                      */
+/*                                                                               */
+/*-------------------------------------------------------------------------------*/
+
+#frame_profile{
+   
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #555;
+    border: #5EA02C solid 3px;
+}
+
+.profile_rol > h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.profile_name {
+    margin-top: 12px;
+    font-size: 20px;
+}
+.profile_assignature{
+    margin-top: 12px;
+}
+
+.profile_assignature > a , .btn-assignature{
+    display: inline-block;
+    background-color: red;
+    margin: 2px;
+    border-radius: 2px;
+    padding: 4px;
+    font-weight: 500;
+}
+
+.profile_assignature > a:hover{
+    color: yellow;
+}
+
+.color1{
+    background: linear-gradient(#90CC55,#499F07); 
+    color: #fff;
+}
+.color2{
+     background: linear-gradient(#f1C400,#F7A900); 
+    color: #fff;
+}
+
+.color3{
+     background: linear-gradient(#B52CBF,#9021A2); 
+    color: #fff;
+}
+.color4{
+     background: linear-gradient(#8FC0FF,#0049A7); 
+    color: #fff;
+}
+
+.color5{
+     background: linear-gradient(#FF9853,#FF5D10); 
+    color: #fff;
+}
+
+.color6{
+     background: linear-gradient(#ABFE4F,#77D11E); 
+    color: #fff;
+}
+
+.nav_list >ul > li {
+    text-decoration: none;
+    display: inline-flex;
+    float: right;
+    margin-right:20px; 
+    position: relative;
+}
+
+.nav_list{
+    padding: 0 0 20px;
+}
+
+.nav_list >ul > li > a{
+    padding: 8px; 
+}
+
+.nav_list >ul > li > a:hover{
+   color: yellow;
+}
+
+#comment{
+        
+}
+.container-comment{
+  
+    background-color: #eee;
+    margin-top: 2;
+    box-shadow: 3px 3px 3px #444;
+    margin: 0 0 20px;
+}
+
+.user_info {
+    display: inline-flex;
+}
+
+.user_photo{
+    padding: 10px;
+}
+.user_photo_image{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.user_data{
+padding: 10px;
+    display: inline;
+}
+
+.user_date{
+    display:inline;
+    float: right;
+}
+
+.comment_text{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 20px;
+}
+footer{
+    padding: 10px;
+}
+
+footer >.reaction{
+    display: inline-block;
+}
+
+footer >.make_comment{
+    display: inline-block;
+    float:right;
+}
+
+
+.frame-form-comment{
+    background-color: #eee;
+    border-radius: 5px;
+}
+.myform{
+   padding: 10px;
+}
+
+/* SPINNER */
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+
+
