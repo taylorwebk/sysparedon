@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/paredon/css/estilos.css">
+    <link rel="stylesheet" href="./vendor/paredon/css/style.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./vendor/fontello/fontello.css">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="container-fluid">
+
+            <div class="row nav rounded-top align-items-stretch justify-content-between">
+                <!-- logotipo-->
+                <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <a class="navbar-brand" href="#">
+                        <img src="./vendor/paredon/img/logo2.png" width="200" height="30" class="d-inline-block aling-top" alt="">
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-lg-auto align-self-center justify-content-end">
+                    <div class=" input-group mb-1">
+                        <input type="text" class="form-control mr-1" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+
+                    <a href="index.html" class="c-1 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span> Inicio</span>
+                            <i class="icono icon-home"></i>
+                        </div>
+                    </a>
+                    <a href="docentes.html" class="c-2 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Docente</span>
+                            <i class="icono icon-users"></i>
+                        </div>
+                    </a>
+                    <a href="auxiliares.html" class="c-3 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Auxiliar</span>
+                            <i class="icono icon-users"></i>
+                        </div>
+                    </a>
+                    <a href="login.html" class="c-4 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Ingresar</span>
+                            <i class="icono icon-user"></i>
+                        </div>
+                    </a>
+
+                </nav>
+
+            </div>
+            <div class="row"></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container mt-3">
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Registrar personas</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Basic Form Elements
+                            </div>
+                            <div class="panel-body">
+
+
+                                <div class="row justify-content-center ">
+                                    <div class="col-8">
+                                        <form action="javascript:" name="form-register-new">
+                                            <span>Nombres</span>
+                                            <div class="input-group mb-3">
+                                                <input name="nombres" id="nombres"type="text" class="form-control" placeholder="Nombres" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            </div>
+                                            <span>Apellidos</span>
+                                            <div class="input-group mb-3">
+                                                <input name="apellidos" id="apellidos" type="text" class="form-control" placeholder="Apellidos" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            </div>
+                                            <span>Grado</span>
+                                            <div class="input-group">
+                                                <select class="custom-select" id="inputGroupGrado">
+                                                    <option selected value="0">Selecione..</option>
+                                                    <option value="Auxiliar">Auxiliar</option>
+                                                    <option value="Docente">Docente</option>
+                                                </select>
+                                            </div>
+                                            <div id="gradoMensaje"></div>
+                                            <span>Materia</span>
+                                            <div class="input-group">
+                                                <select class="custom-select" id="inputGroupMaterias">
+                                                    <option selected value="0">Seleccione..</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="" id="materiasElegidas"></div>
+                                            <button class="btn btn-outline-secondary m-3" type="submit">Enviar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-3">
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Administrar Docente y Auxiliar</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Basic Form Elements
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="row justify-content-center">
+                                    <div class="col-8">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Nombre</th>
+                                                    <th scope="col">Estado</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        <strong>Docente:</strong>
+                                                        <a href="home.html">Juan Perez</a>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success" value="1" id="estado">
+                                                            <span>HABILITADO</span>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        <strong>Docente:</strong>
+                                                        <a href="home.html">Juan Perez</a>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger" value="2" id="estado">INHABILITADO</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>
+                                                        <strong>Docente:</strong>
+                                                        <a href="home.html">Juan Perez</a>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success" value="3" id="estado">HABILITADO</button>
+                                                    </td>
+                                                </tr>
+
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./vendor/jquery/jquery.js"></script>
+    <script src="./vendor/jquery/jquery-validation.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./vendor/paredon/js/admin.js"></script>
+
+    <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script-->
+    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script-->
+</body>
+
+</html>

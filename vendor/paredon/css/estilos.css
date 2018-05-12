@@ -1,0 +1,90 @@
+/* puntuacion*/
+.point{
+    font-weight: 600;
+    font-size: 25px;
+}
+/*Estrellas*/
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 30px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(255, 235, 59);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+/* Fin Estrellas*/
+
+
+/* estilos personalizados */
+
+/* begin login */
+.login-box{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* end login */
+
+
+
+ 
+/* begin admin */
+
+.page-wrapper{
+	background-color: #fff;
+	padding: 10px;
+}
+.page-wrapper h2{
+	font-family: cursive;
+	font-size: 2em;
+}
+
+.panel{
+	border: 1px solid #888;
+	border-radius:10px; 
+}
+.panel-default{
+	border: 1px solid rgb(145, 137, 137);
+}
+
+.panel >.panel-heading{
+	background-color: #eee;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.panel >.panel-body{
+	padding: 10px;
+}
+
+/* end admin */
+
+ 
+
+
+
+

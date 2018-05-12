@@ -1,0 +1,141 @@
+body {
+    background: #f2f2f2;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  header .nav {
+    min-height: 80px;
+    overflow: hidden;
+    background: #fff;
+  }
+  /*-- Logo--*/
+  header .logo h2,
+  header .logo span,
+  header .logo p {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+  }
+  header .logo h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  header .logo .icono {
+    color: #bfbfbf;
+  }
+  header .logo p {
+    color: #777777;
+  }
+  
+  /* -- menu --*/
+  header .menu {
+    padding: 0;
+  }
+  header .menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 15px;
+  }
+  form{
+    padding: 0px 5px 0px 0px;
+  }
+  header .menu a div span {
+    font-weight: 600;
+  }
+  header .menu .c-1 {
+    background: #3da5e2;
+  }
+  header .menu .c-2 {
+    background: #005385;
+  }
+  header .menu .c-3 {
+    background: #848484;
+  }
+  header .menu .c-4 {
+    background: #e3e8eb;
+  }
+  
+  header .menu .c-1:hover {
+    background: #1ba0ef;
+  }
+  header .menu .c-2:hover {
+    background: #00426a;
+  }
+  header .menu .c-3:hover {
+    background: #002d44;
+  }
+  header .menu .c-4:hover {
+    background: #1a1b1b;
+  }
+  
+  
+  
+  footer a {
+    color: rgb(238, 232, 238);
+  }
+  footer a:hover {
+    color: #fff;
+  }
+  #icons {
+    width: 184px;
+    float: right;
+  }
+  #icons li {
+    float: left;
+    padding-right: 10px;
+    list-style:none;
+  }
+  
+  #icons .first {
+    float: none;
+    font-size: 23px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: -15px;
+    padding-bottom: 9px;
+  }
+  footer {
+    padding: 30px 20px 0;
+    background: #848484;
+  }
+  
+  /* --- Mediaqueries --- */
+  
+  /* Dispositivo xl */
+  @media screen and (max-width: 1500px) {
+    
+  }
+   
+  .menu a span {
+    text-align: center;
+  }
+  /* Dispositivo lg */
+  @media screen and (max-width: 991px) {
+    .logo {
+      height: 76px;
+    }
+  
+    .menu {
+      min-height: 76px;
+    }
+  
+    .menu a {
+      width: 100%;
+    }
+  
+    .menu a div {
+      width: 100%;
+    }
+   
+   
+  }
+  /* Dispositivo md */
+  @media screen and (max-width: 767px) {
+    
+  }
+  /* Dispositivo sm */
+  @media screen and (max-width: 575px) {
+   
+  }
+  

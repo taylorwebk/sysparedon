@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/paredon/css/estilos.css">
+    <link rel="stylesheet" href="./vendor/paredon/css/style.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./vendor/fontello/fontello.css">
+    <style>
+        .spinner {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+
+            margin: 100px auto;
+            -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+            animation: sk-rotateplane 1.2s infinite ease-in-out;
+        }
+
+        @-webkit-keyframes sk-rotateplane {
+            0% {
+                -webkit-transform: perspective(120px)
+            }
+            50% {
+                -webkit-transform: perspective(120px) rotateY(180deg)
+            }
+            100% {
+                -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+            }
+        }
+
+        @keyframes sk-rotateplane {
+            0% {
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+            }
+            50% {
+                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+            }
+            100% {
+                transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="container-fluid">
+
+            <div class="row nav rounded-top align-items-stretch justify-content-between">
+                <!-- logotipo-->
+                <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <a class="navbar-brand" href="#">
+                        <img src="./vendor/paredon/img/logo2.png" width="200" height="30" class="d-inline-block aling-top" alt="">
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-lg-auto align-self-center justify-content-end">
+                    <div class=" input-group mb-1">
+                        <input type="text" class="form-control mr-1" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+
+                    <a href="index.html" class="c-1 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span> Inicio</span>
+                            <i class="icono icon-home"></i>
+                        </div>
+                    </a>
+                    <a href="docentes.html" class="c-2 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Docente</span>
+                            <i class="icono icon-users"></i>
+                        </div>
+                    </a>
+                    <a href="auxiliares.html" class="c-3 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Auxiliar</span>
+                            <i class="icono icon-users"></i>
+                        </div>
+                    </a>
+                    <a href="login.html" class="c-4 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Ingresar</span>
+                            <i class="icono icon-user"></i>
+                        </div>
+                    </a>
+
+                </nav>
+
+            </div>
+            <div class="row"></div>
+        </div>
+    </header>
+
+
+    <section class="container" id="listacontenedor">
+        <h1>Auxiliares</h1>
+        <div class="row justify-content-center" id="lista">
+            <div class="spinner"></div>
+            <!-- <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Marisol Tellez</h5>
+                        <i class="icono icon-home"></i>
+                        <p class="card-text">INF-131, INF-151</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">3 comentarios</small>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-6">
+                <a href="#"> full Stack &copy; 2018
+                    <br>Celulares: </a>
+                <a href="#" target="_blank"> + 591 707 07070 ,+591 780 89892 </a>
+                <br>
+            </div>
+
+            <div class="col-6 align-self-center">
+                <ul id="icons">
+                    <li class="first">Contactos:</li>
+
+                    <li>
+                        <a href="#" class="normaltip" title="Facebook">
+                            <img class="img-fluid rounded" src="./vendor/paredon/img/icon1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normaltip" title="Twitter">
+                            <img class="img-fluid rounded" src="./vendor/paredon/img/icon2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normaltip" title="correo">
+                            <img class="img-fluid rounded" src="./vendor/paredon/img/icon3.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normaltip" title="Instagram">
+                            <img class="img-fluid rounded" src="./vendor/paredon/img/icon4.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./vendor/jquery/jquery.js"></script>
+    <script src="./vendor/jquery/jquery-validation.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/paredon/js/main.js"></script>
+    <script src="./vendor/paredon/js/form-validation.js"></script>
+    <script src="./vendor/paredon/js/auxiliares.js"></script>
+</body>
+
+</html>
