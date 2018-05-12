@@ -51,8 +51,12 @@ $('#inputGroupMaterias').change(function(){
       if(id_materias.length==0){
         $('#materiasElegidas').html(''); 
       }
-        $('#materiasElegidas').append('<span>'+ materias[parseInt(id)-1].sigla+ ', </span>');
-        id_materias.push(parseInt(id))
+       
+        if(id_materias.indexOf(id)==-1){
+          $('#materiasElegidas').append('<span>'+ materias[parseInt(id)-1].sigla+ ', </span>');
+          id_materias.push(parseInt(id))
+        }
+      
       
     }
 });
@@ -98,11 +102,14 @@ function send_person(){
 console.log(data);
         $.ajax({
             async:true,
-            type:'GET',
+            type:'POST',
             dataType: 'json',
             contentType:'application/x-www-form-urlencoded',
-            url: base_URL +'docentes-api/',
+            url: base_URL +'docentes-api/admin/docente',
             data:data,
+            headers:{
+              "Authorization":localStorage.getItem("token")
+            },
             beforeSend: function (){ 
               before();
             },
@@ -123,7 +130,13 @@ console.log(data);
     }
         
 }
+$('#btnLimpiar').click(function(){
+  $('#nombres').val('');
+  $('#apellidos').val('');
+  var id_materias = [];
+  $('#materiasElegidas').html('');
 
+});
 
 
 $(function(){
