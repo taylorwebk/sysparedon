@@ -16,15 +16,26 @@ let fillData = function (data) {
   $('#lista').html(list)
 }
 let mainf = function () {
+  let data = []
   $.ajax('https://www.grindhood.com/docentes-api/auxi')
   .then(function(res) {
-    fillData(res.content)
+    data = res.content
+    fillData(data)
   })
   $(document).on('click', '.card-aux', function(e) {
     let id = e.currentTarget.id
     localStorage.setItem('id', id)
     localStorage.setItem('type', 'aux')
     location.replace('./home.html')
+  })
+  $('#searchaux').keyup(function(e) {
+    let text = e.currentTarget.value.toLowerCase()
+    let datafiltered = data.filter(function(item) {
+      if (item.nombres.toLowerCase().indexOf(text) != -1 || item.apellidos.toLowerCase().indexOf(text) != -1) {
+        return true
+      }
+    })
+    fillData(datafiltered)
   })
 }
 $(document).ready(mainf)
