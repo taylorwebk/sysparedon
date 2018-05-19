@@ -547,6 +547,11 @@ footer >.make_comment{
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
-
+.card-aux {
+  cursor: pointer;
+}
+.card-aux:hover {
+  box-shadow: 3px 3px 5px 3px #444;
+}
 
 
