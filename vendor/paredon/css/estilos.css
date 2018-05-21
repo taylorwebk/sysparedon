@@ -8,7 +8,7 @@
 	font-size: 30px;
 }
 .point{
-    font-weight: 600;
+   
 	font-size: 25px;
 	padding-top: 5px;
 }
@@ -64,8 +64,86 @@
 
 /* end admin */
 
- 
+/*---------------------------*/
+/*		comentarios 		*/
+/*----------------------------*/
+.perfil .card{
+	border-left: 5px solid blue;
+  }
 
+.botones a, label {
+	text-decoration: none;
+	color: #acacac;
+	font-size: 14px;
+	margin-left: 20px;	
+}
+.botones a:hover{
+	
+}
+.reaccion{
+	width: 25px;
+	height: 25px;
+	border-radius: 50px;
+	
+}
+.coment{
+	border-top: 1px solid #888;
+	padding-top: 20px;
+}
+.ocultar{
+	display: none;
+}
+.media .nombre {
+	color: #4b65d1;
+	margin-bottom: 0;
+}
+
+.media .nombre span {
+	font-size: 12px;
+	color: #464646;
+	margin-left: 10px;
+}
+
+.media .comentario {
+	margin-top: 10px;
+}
+/*---------------------------*/
+/*		Perfil				*/
+/*----------------------------*/
+.jumbotron{
+	background-image: url(../img/background.jpg);
+	border-radius: 0%;
+	height: 300px;
+	
+}
+.Perfilcont{
+	margin-top: -200px;	
+	
+}
+
+.contPerfil{
+	background: #6567dac5   ;
+	color: #eee;
+	padding: 40px 5px 10px 40px;
+	
+}
+h1{
+	text-align: center;
+	font-size: 50px;
+}
+.contPerfil h3, h5, .clas, h1{
+	font-family: 'Lobster', cursive;
+}
+.imgPerfil{	
+	height: 100%;
+	width: 100%;
+	
+}
+.perfilImg{
+	margin: 0px;
+	padding: 0px;
+	
+}
 
 
 

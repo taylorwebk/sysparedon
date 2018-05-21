@@ -127,16 +127,56 @@ body {
     .menu a div {
       width: 100%;
     }
-   
-   
+    .card2{
+      margin: 50px 0px;
+    }
+    .subImpar{
+      margin-top: -200px;
+    }
+    .subPar{
+      margin-bottom: 50px;
+    }
+    .perfil .card{
+      border-left: 5px solid blue;
+    }
   }
   /* Dispositivo md */
   @media screen and (max-width: 767px) {
     
   }
   /* Dispositivo sm */
-  @media screen and (max-width: 575px) {
-   
+  @media screen and (max-width: 600px) {
+    .perfil{
+      border-left: 5px solid blue;
+      margin: 10px 20px;
+    }
+    .rowperfil {
+      margin: 0px 1px;
+    }
+    .perfil .card{
+      border-left: 0px;
+      }
+      .perfil .col-sm-12{
+        padding: 0px;
+        
+      }
+    .imgPerfil{
+      border-radius: 50%;
+      height: 170px;
+      width: 170px;
+    }
+    .jumbotron{
+      height: 200px;      
+    }
+    .perfilImg{  
+      position: absolute;
+    }
+    .contPerfil{               
+     margin-top: 90px;
+      padding: 80px 10px 10px 10px ;
+      text-align: center;
+    }
+    
   }
   
   

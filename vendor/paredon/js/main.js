@@ -93,3 +93,20 @@ let mainf = function() {
   });
 };
 $(document).ready(mainf);
+
+
+$(document).on('click', '#ocultarMostrar', function(e){  
+  e.preventDefault();
+  let a=e.currentTarget.text
+  let oc=e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].classList;
+  if(a=='Ocultar'){
+    e.currentTarget.text= 'Mostrar';    
+    oc.add('ocultar')        
+  }else{
+    e.currentTarget.text='Ocultar';
+    oc.remove('ocultar') 
+  }
+  
+});
+
+
